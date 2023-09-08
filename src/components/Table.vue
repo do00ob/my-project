@@ -22,6 +22,7 @@ import axios from 'axios';
 
 export default {
     created: function () {
+        //这个=>的作用是让该匿名函数内的this的作用域能和created平级 不用=>作用域会被限制在函数体内
         axios.get("http://localhost:8088/user/get").then((response) => {
             this.tableData = response.data
         })

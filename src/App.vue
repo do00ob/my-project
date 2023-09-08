@@ -10,7 +10,7 @@
       </el-container>
     </el-container>
   </div>
-
+  
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <ul>
     <!--li v-for="(data,index) in tableData" :key="index">{{data}}</li-->
@@ -42,6 +42,8 @@ const tableRowClassName = ({
 
 export default {
   name: 'App',
+  //在components里进行注册
+  //注册完后就能在templete里使用对应名字的标签
   components: {
     //HelloWorld,
     myTable

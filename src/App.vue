@@ -4,7 +4,7 @@
     <el-container>
       <el-header><myHeader/></el-header>
       <el-container>
-        <el-aside width="150px"><myAside msg="ee"/></el-aside>
+        <el-aside width="220px"><myAside msg="ee"/></el-aside>
         <el-main><myTable msg="ee"/></el-main>
       </el-container>
     </el-container>
@@ -69,5 +69,9 @@ export default {
 }
 .el-table .success-row {
   --el-table-tr-bg-color: var(--el-color-success-light-9);
+}
+.el-main
+{
+  padding: 0px;
 }
 </style>

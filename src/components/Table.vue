@@ -96,5 +96,7 @@ export default {
 </script>
 
 <style>
-
+  main.el-main {
+    padding: 0;
+}
 </style>

@@ -1,18 +1,26 @@
 <template>
-    <el-dropdown>
-        <i class="el-icon-setting" style="margin-right: 15px"></i>
-        <el-dropdown-menu>
-          <el-dropdown-item>查看</el-dropdown-item>
-          <el-dropdown-item>新增</el-dropdown-item>
-          <el-dropdown-item>删除</el-dropdown-item>
-        </el-dropdown-menu>
-      </el-dropdown>
-      <span>王小虎</span>
+    <el-header style="text-align: center; font-size: 35px">
+        <div class="toolbar">
+          <el-dropdown>
+            <el-icon style="margin-right: 8px; margin-top: 1px"
+              ><setting
+            /></el-icon>
+            <template #dropdown>
+              <el-dropdown-menu>
+                <el-dropdown-item>View</el-dropdown-item>
+                <el-dropdown-item>Add</el-dropdown-item>
+                <el-dropdown-item>Delete</el-dropdown-item>
+              </el-dropdown-menu>
+            </template>
+          </el-dropdown>
+          <span>学生管理系统</span>
+        </div>
+      </el-header>
 </template>
 
 <style>
   .el-header {
-    background-color: #B3C0D1;
+    background-color: #b2d0f7;
     color: #333;
     line-height: 60px;
   }
@@ -20,6 +28,7 @@
   .el-aside {
     color: #333;
   }
+
 </style>
  
  <script>

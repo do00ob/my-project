@@ -1,11 +1,10 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
 
   <div class="common-layout">
     <el-container>
-      <el-header>Header</el-header>
+      <el-header><myHeader/></el-header>
       <el-container>
-        <el-aside width="350px">Aside</el-aside>
+        <el-aside width="150px"><myAside msg="ee"/></el-aside>
         <el-main><myTable msg="ee"/></el-main>
       </el-container>
     </el-container>
@@ -22,6 +21,8 @@
 <script >
 import HelloWorld from './components/HelloWorld.vue'
 import myTable from './components/Table.vue';
+import myAside from './components/Aside.vue'
+import myHeader from './components/Header.vue'
 
 
 
@@ -46,7 +47,9 @@ export default {
   //注册完后就能在templete里使用对应名字的标签
   components: {
     //HelloWorld,
-    myTable
+    myTable,
+    myAside,
+    myHeader
   }
 }
 </script>
